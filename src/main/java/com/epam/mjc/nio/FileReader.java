@@ -9,7 +9,6 @@ import java.util.Map;
 public class FileReader {
 
     public Profile getDataFromFile(File file) {
-        int b;
 
         Map<String, String> map = new HashMap<>();
         StringBuilder builder = new StringBuilder();
@@ -21,9 +20,6 @@ public class FileReader {
             }
 
             String[] words = builder.toString().split("\n");
-            for (String w : words) {
-                System.out.println(w);
-            }
 
             for (String w : words) {
                 String[] keyValue = w.split(": ");
